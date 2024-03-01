@@ -1,0 +1,16 @@
+{
+    "nationalParks": [
+      { 
+        "id": 1, 
+      "name": "Yellowstone National Park", 
+      "location": "Wyoming", 
+      "image": "yellowstone.jpg"
+     },
+      {
+         "id": 2,
+          "name": "Yosemite National Park",
+           "location": "California",
+            "image": "yosemite.jpg" 
+        }
+    ]
+    }
