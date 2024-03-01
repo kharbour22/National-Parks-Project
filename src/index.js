@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import About from './components/About';
 import ParkList from './components/ParkList';
+import NewParkForm from './components/NewParkForm';
+
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/add_park",
-        element: <h1>Add Another Park!</h1>
+        element: <NewParkForm/>
       },
       {
         path: "/about_me",
