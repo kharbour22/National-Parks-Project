@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import About from './components/About';
+import ParkList from './components/ParkList';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Suggested Parks</h1>
+        element: <ParkList/>
       },
       {
         path: "/add_park",
