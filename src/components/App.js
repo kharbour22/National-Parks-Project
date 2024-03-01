@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { useState, useEffect} from "react";
+import NavBar from "./NavBar";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar/>
       <h1>National Parks Explorer</h1>
       
       <Outlet context={{parks: parks}}/>
