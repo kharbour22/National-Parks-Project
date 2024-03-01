@@ -12,6 +12,21 @@ function App() {
     .then(parksData => setParks(parksData))
   }, [])
 
+  function addPark(newPark){
+
+   fetch('http://localhost:4000/parks', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(newPark)
+   })
+   .then(response => response.json())
+   .then(newParkData => setParks(parks => [...parks, newParkData]))
+
+  }
+
   console.log(parks)
 
   return (
@@ -19,7 +34,7 @@ function App() {
       <NavBar/>
       <h1>National Parks Explorer</h1>
       
-      <Outlet context={{parks: parks}}/>
+      <Outlet context={{parks: parks, addPark: addPark}}/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useOutletContext } from "react-router-dom"
 
 
 function NewParkForm(){
@@ -12,12 +12,14 @@ function NewParkForm(){
     })
 
     const navigate = useNavigate()
+    const {addPark} = useOutletContext()
+    
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(formData)
+        
 
-        //Add park code goes here
+        addPark(formData)
 
         setformData({name:"", image:"",location:""})
         navigate('/')
