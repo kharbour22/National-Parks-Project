@@ -21,7 +21,7 @@ function NewParkForm(){
 
         addPark(formData)
 
-        setformData({name:"", image:"",location:""})
+        setformData({name:"", image:"",location:"", description:""})
         navigate('/')
     }
 
@@ -42,6 +42,9 @@ function NewParkForm(){
           <br/>
           <label>Location:</label>
           <input onChange={updatedFormData} type="text" name= "location" placeholder="The state to visit!" value={formData.location}/>
+          <br/>
+          <label>Description:</label>
+          <input onChange={updatedFormData} type="text" name= "description" placeholder="Tell us about it!" value={formData.description}/>
           <br/>
           <button type="submit">Add Park</button>  
         </form>

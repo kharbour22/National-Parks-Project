@@ -1,7 +1,7 @@
 function Park({park}){
     return(
         <li>
-            <h4>{park.name}</h4>
+            <h2><u>{park.name}</u></h2>
             <img src={park.image}/>
             <h5>{park.location}</h5>
            

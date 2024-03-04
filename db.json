@@ -5,70 +5,80 @@
       "name": "Yellowstone National Park",
       "location": "Wyoming",
       "image": "assets/Yellowstone.png",
-      "activities": ["Hiking", "Camping", "Wildlife Viewing"]
+      "activities": ["Hiking", "Camping", "Wildlife Viewing"],
+      "description": "Experience the wonders of Yellowstone National Park, home to iconic geysers, majestic waterfalls, and diverse wildlife. Whether you're exploring the vibrant geothermal features or hiking through pristine wilderness, Yellowstone promises an unforgettable adventure for all!"
     },
     {
       "id": 2,
       "name": "Yosemite National Park",
       "location": "California",
       "image": "assets/Yosemite.png",
-      "activities": ["Hiking", "Rock Climbing", "Scenic Drives"]
+      "activities": ["Hiking", "Rock Climbing", "Scenic Drives"],
+      "description": "Discover the natural splendor of Yosemite National Park, where towering granite cliffs meet cascading waterfalls and lush forests. Whether you're climbing iconic rock formations or admiring breathtaking vistas, Yosemite offers endless opportunities for exploration and awe!"
     },
     {
       "id": 3,
       "name": "Grand Canyon National Park",
       "location": "Arizona",
       "image": "assets/Grand.png",
-      "activities": ["Hiking", "Rafting", "Scenic Flights"]
+      "activities": ["Hiking", "Rafting", "Scenic Flights"],
+      "description": "Embark on a journey into the depths of the Grand Canyon, where ancient rock formations tell a story millions of years in the making. Whether you're rafting down the Colorado River or soaring above the canyon on a scenic flight, the Grand Canyon promises an adventure like no other!"
     },
     {
       "id": 4,
       "name": "Great Smoky Mountains National Park",
       "location": "Tennessee and North Carolina",
       "image": "assets/Smoky.png",
-      "activities": ["Hiking", "Wildlife Viewing", "Fishing"]
+      "activities": ["Hiking", "Wildlife Viewing", "Fishing"],
+      "description": "Immerse yourself in the beauty of the Great Smoky Mountains, where misty peaks and lush forests create a breathtaking backdrop for outdoor adventures. Whether you're hiking scenic trails or fishing in pristine streams, the Smokies offer endless opportunities for relaxation and exploration!"
     },
     {
       "id": 5,
       "name": "Rocky Mountain National Park",
       "location": "Colorado",
       "image": "assets/Rocky.png",
-      "activities": ["Hiking", "Camping", "Wildlife Viewing"]
+      "activities": ["Hiking", "Camping", "Wildlife Viewing"],
+      "description": "Explore the rugged beauty of Rocky Mountain National Park, where towering peaks, alpine lakes, and vibrant wildflowers await. Whether you're hiking to panoramic vistas or spotting wildlife in its natural habitat, Rocky Mountain promises an unforgettable adventure for nature lovers and outdoor enthusiasts!"
     },
     {
       "id": 6,
       "name": "Zion National Park",
       "location": "Utah",
       "image": "assets/Zion.png",
-      "activities": ["Hiking", "Canyoneering", "Scenic Drives"]
+      "activities": ["Hiking", "Canyoneering", "Scenic Drives"],
+      "description": "Discover the awe-inspiring landscapes of Zion National Park, where towering sandstone cliffs and emerald pools beckon adventurers from around the world. Whether you're hiking through slot canyons or admiring sweeping vistas, Zion promises an unforgettable adventure for all!"
     },
     {
       "id": 7,
       "name": "Acadia National Park",
       "location": "Maine",
       "image": "assets/Acadia.png",
-      "activities": ["Hiking", "Biking", "Birdwatching"]
+      "activities": ["Hiking", "Biking", "Birdwatching"],
+      "description": "Experience the natural beauty of Acadia National Park, where rugged coastlines, lush forests, and granite peaks converge to create a stunning landscape. Whether you're hiking along scenic trails or biking along picturesque carriage roads, Acadia promises an outdoor adventure like no other!"
     },
     {
       "id": 8,
       "name": "Grand Teton National Park",
       "location": "Wyoming",
       "image": "assets/Teton.png",
-      "activities": ["Hiking", "Climbing", "Fishing"]
+      "activities": ["Hiking", "Climbing", "Fishing"],
+      "description": "Discover the majestic beauty of Grand Teton National Park, where towering peaks, pristine lakes, and abundant wildlife await. Whether you're hiking to iconic summits or casting your line in crystal-clear waters, Grand Teton promises an unforgettable adventure for outdoor enthusiasts!"
     },
     {
       "id": 9,
       "name": "Glacier National Park",
       "location": "Montana",
       "image": "assets/Glacier.png",
-      "activities": ["Hiking", "Boating", "Wildlife Viewing"]
+      "activities": ["Hiking", "Boating", "Wildlife Viewing"],
+      "description": "Embark on an epic adventure in Glacier National Park, where towering mountains, pristine lakes, and ancient glaciers create a breathtaking landscape. Whether you're hiking through alpine meadows or cruising on scenic boat tours, Glacier promises an unforgettable experience for nature lovers and outdoor enthusiasts!"
     },
     {
       "id": 10,
       "name": "Canyonlands National Park",
       "location": "Utah",
       "image": "assets/Canyonlands.png",
-      "activities": ["Hiking", "Camping", "Stargazing"]
+      "activities": ["Hiking", "Camping", "Stargazing"],
+      "description": "Experience the rugged beauty of Canyonlands National Park, where towering mesas, deep canyons, and stunning arches await. Whether you're hiking to panoramic viewpoints or stargazing under the desert sky, Canyonlands promises an adventure like no other!"
     }
   ]
 }
