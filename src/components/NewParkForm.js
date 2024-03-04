@@ -46,6 +46,9 @@ function NewParkForm(){
           <label>Description:</label>
           <input onChange={updatedFormData} type="text" name= "description" placeholder="Tell us about it!" value={formData.description}/>
           <br/>
+          <label>Activities:</label>
+          <input onChange={updatedFormData} type="text" name= "description" placeholder="Activities to explore!" value={formData.activities}/>
+          <br/>
           <button type="submit">Add Park</button>  
         </form>
     )
