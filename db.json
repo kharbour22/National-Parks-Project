@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Yellowstone National Park",
       "location": "Wyoming",
-      "image": "assets/Yosemite.png",
+      "image": "assets/Yellowstone.png",
       "activities": ["Hiking", "Camping", "Wildlife Viewing"]
     },
     {
