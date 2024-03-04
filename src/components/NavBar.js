@@ -6,7 +6,7 @@ function NavBar(){
         <nav style={{ backgroundColor: '#023f02', textAlign: 'left', border: '2px solid black', padding: '10px', display: 'flex', justifyContent: 'space-evenly'  }}>
             <NavLink to= "/" style={{ color: 'gold', fontWeight: 'bold' }}>Home</NavLink>
             <NavLink to= "/add_park" style={{ color: 'gold', fontWeight: 'bold' }}>Add Park</NavLink>
-            <NavLink to= "about_me" style={{ color: 'gold', fontWeight: 'bold' }}>About me</NavLink>
+            <NavLink to= "about_me" style={{ color: 'gold', fontWeight: 'bold' }}>About Me</NavLink>
         </nav>
     )
 }
