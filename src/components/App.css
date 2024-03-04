@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(45deg, #64270386 25%, transparent 25%) 0 0,
+              linear-gradient(-45deg, #023f02 25%, transparent 25%) 0 0,
+              linear-gradient(45deg, transparent 75%, #64270386 75%) 0 100%,
+              linear-gradient(-45deg, transparent 75%, #023f02 75%) 0 100%;
+    background-color: #292727; 
+    color: #ffffff; 
+  }
