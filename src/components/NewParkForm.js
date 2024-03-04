@@ -8,6 +8,8 @@ function NewParkForm(){
         name: "",
         image: "",
         location: "",
+        description: "",
+        activities: ""
 
     })
 
@@ -21,7 +23,7 @@ function NewParkForm(){
 
         addPark(formData)
 
-        setformData({name:"", image:"",location:"", description:""})
+        setformData({name:"", image:"",location:"", description:"", activities:""})
         navigate('/')
     }
 
@@ -47,7 +49,7 @@ function NewParkForm(){
           <input onChange={updatedFormData} type="text" name= "description" placeholder="Tell us about it!" value={formData.description}/>
           <br/>
           <label>Activities:</label>
-          <input onChange={updatedFormData} type="text" name= "description" placeholder="Activities to explore!" value={formData.activities}/>
+          <input onChange={updatedFormData} type="text" name= "activities" placeholder="Activities to explore!" value={formData.activities}/>
           <br/>
           <button type="submit">Add Park</button>  
         </form>
