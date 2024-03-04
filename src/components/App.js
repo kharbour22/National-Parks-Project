@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <h1>National Parks Explorer</h1>
-      <p>Have you always been interested in traveling our nation's National Parks but don't know where to start? National Park Explorer provides suggestions for where to start based off your current location or favorite activities. You can mark off completed adventures and even add some more national parks to explore!</p>
+      <p>Have you always been interested in traveling our nation's National Parks but don't know where to start? National Parks Explorer provides suggestions for where to start based off your current location or favorite activities. You can mark off completed adventures and even add some more national parks to explore!</p>
       
       <Outlet context={{parks: parks, addPark: addPark}}/>
     </div>
