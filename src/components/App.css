@@ -4,7 +4,9 @@ body {
               linear-gradient(45deg, transparent 75%, #64270386 75%) 0 100%,
               linear-gradient(-45deg, transparent 75%, #967801 75%) 0 100%;
     background-color: #292727; 
-    color: #ffffff; 
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) 
+    
   }
 
   .about {
@@ -34,8 +36,11 @@ body {
   background-color: #292727;
   border: 2px solid black;
   padding: 10px;
-  color: white;
+  color: gold;;
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.park-button.completed {
+  background-color: #710101
 }

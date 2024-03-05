@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Import the CSS file
+import './App.css';
 
 function Park({ park }) {
     const [completed, setCompleted] = useState(false);
@@ -14,11 +14,14 @@ function Park({ park }) {
             <h5>{park.location}</h5>
             <div className="park-container">
                 <h4>{park.description}</h4>
-                <h5>Explore: {park.activities}</h5>
-                <img src={park.image} className="park-image" alt={park.name} />
+                <h5><u>Explore</u>: {park.activities}</h5>
+                <img className="park-image" src={park.image}  alt={park.name} />
                 <br />
-                <button onClick={toggleCompletion} className="park-button">
-                    {completed ? <u>Completed!</u> : 'Mark as Completed'}
+                <button 
+                    onClick={toggleCompletion} 
+                    className={`park-button ${completed ? 'completed' : ''}`}
+                >
+                    {completed ? 'Completed!' : 'Mark as Completed'}
                 </button>
             </div>
             <br />
