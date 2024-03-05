@@ -39,7 +39,7 @@ function NewParkForm(){
               <h3>Add a new park to explore!</h3>
         <form onSubmit={handleSubmit}>
             <label>Name:</label>
-          <input onChange={updatedFormData} type="text" name= "name" placeholder="Add the parks name here!" value={formData.name}/>
+          <input onChange={updatedFormData} type="text" name= "name" placeholder="Add the parks name here!" value={formData.name} />
           <br/>
           <label>Image:</label>
           <input onChange={updatedFormData} type="text" name= "image" placeholder="Add a picture here!" value={formData.image}/>

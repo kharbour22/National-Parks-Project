@@ -1,6 +1,9 @@
+import './App.css'
+
+
 function About(){
     return (
-        <div>
+        <div className="about">
           <h2>About This App</h2>
 <p>Welcome to the National Parks Explorer, your ultimate guide to exploring the natural wonders of the United States! This app is designed to help you discover and learn about some of the most iconic national parks across the country.</p>
 <h2>Our Mission</h2>
