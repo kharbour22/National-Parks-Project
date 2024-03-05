@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         element: <NewParkForm/>
       },
       {
-        path: "/about_me",
+        path: "/about",
         element: <About/>
       }
     ]

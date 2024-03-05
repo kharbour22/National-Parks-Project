@@ -35,6 +35,8 @@ function NewParkForm(){
 
 
     return (
+        <div>
+              <h3>Add a new park to explore!</h3>
         <form onSubmit={handleSubmit}>
             <label>Name:</label>
           <input onChange={updatedFormData} type="text" name= "name" placeholder="Add the parks name here!" value={formData.name}/>
@@ -53,6 +55,7 @@ function NewParkForm(){
           <br/>
           <button type="submit">Add Park</button>  
         </form>
+        </div>
     )
 }
 export default NewParkForm
