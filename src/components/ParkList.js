@@ -5,7 +5,11 @@ import SearchBar from "./SearchBar";
 
 function ParkList() {
   const { parks } = useOutletContext();
-  const [searchResults, setSearchResults] = useState(parks);
+  const [searchResults, setSearchResults] = useState([]);
+
+  if (searchResults.length === 0 && parks.length > 0) {
+    setSearchResults(parks);
+  }
 
   const handleSearch = (searchTerm) => {
     const filteredParks = parks.filter((park) =>
@@ -27,7 +31,6 @@ function ParkList() {
         <SearchBar onSearch={handleSearch} />
       </div>
       <ul className="park-list">
-       
         {searchResults.map((park) => (
           <Park key={park.id} park={park} />
         ))}
