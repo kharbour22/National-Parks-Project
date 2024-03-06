@@ -1,41 +1,38 @@
+import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import { useState, useEffect} from "react";
 import NavBar from "./NavBar";
-import './App.css';
+import "./App.css";
 
 function App() {
-
-  const [parks, setParks] = useState([])
+  const [parks, setParks] = useState([]);
+  
 
   useEffect(() => {
-    fetch('http://localhost:4000/parks')
-    .then(response => response.json())
-    .then(parksData => setParks(parksData))
-  }, [])
+    fetch("http://localhost:4000/parks")
+      .then((response) => response.json())
+      .then((parksData) => setParks(parksData));
+  }, []);
 
-
-  function addPark(newPark){
-
-   fetch('http://localhost:4000/parks', {
+  function addPark(newPark) {
+    fetch("http://localhost:4000/parks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        Accept: "application/json",
       },
-      body: JSON.stringify(newPark)
-   })
-   .then(response => response.json())
-   .then(newParkData => setParks(parks => [...parks, newParkData]))
-
+      body: JSON.stringify(newPark),
+    })
+      .then((response) => response.json())
+      .then((newParkData) => setParks((parks) => [...parks, newParkData]));
   }
 
+  
 
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <h1>National Parks Explorer</h1>
-      
-      <Outlet context={{parks: parks, addPark: addPark}}/>
+      <Outlet context={{ parks: parks, addPark: addPark }} />
     </div>
   );
 }
