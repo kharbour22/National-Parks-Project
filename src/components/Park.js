@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function Park({ park }) {
-    const [completed, setCompleted] = useState(false);
+    const [visited, setVisited] = useState(() => {
+        return localStorage.getItem(park.id) === 'true' || false;
+    });
 
-    const toggleCompletion = () => {
-        setCompleted(!completed);
+    useEffect(() => {
+        localStorage.setItem(park.id, visited);
+    }, [park.id, visited]);
+
+    const toggleVisited = () => {
+        setVisited(!visited);
     };
 
     return (
@@ -18,10 +24,10 @@ function Park({ park }) {
                 <img className="park-image" src={park.image}  alt={park.name} />
                 <br />
                 <button 
-                    onClick={toggleCompletion} 
-                    className={`park-button ${completed ? 'completed' : ''}`}
+                    onClick={toggleVisited} 
+                    className={`park-button ${visited ? 'completed' : ''}`}
                 >
-                    {completed ? 'Completed!' : 'Mark as Completed'}
+                    {visited ? 'Visited!' : 'Mark as Visited'}
                 </button>
             </div>
             <br />
