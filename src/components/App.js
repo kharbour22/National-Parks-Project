@@ -22,8 +22,8 @@ function App() {
       },
       body: JSON.stringify(newPark),
     })
-      .then((response) => response.json())
-      .then((newParkData) => setParks((parks) => [...parks, newParkData]));
+      .then(response => response.json())
+      .then(newParkData => setParks(parks => [...parks, newParkData]));
   }
 
   

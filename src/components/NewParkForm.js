@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate, useOutletContext } from "react-router-dom"
-
+import "./App.css"
 
 function NewParkForm(){
 
