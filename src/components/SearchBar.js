@@ -10,7 +10,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className="searchbar">
-        <h5><u>Search by Name</u>:</h5>
+        <h4><u>Search by Name</u>:</h4>
       <input
         type="text"
         placeholder=""

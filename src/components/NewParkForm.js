@@ -35,8 +35,8 @@ function NewParkForm(){
 
 
     return (
-        <div>
-              <h3>Add a new park to explore!</h3>
+        <div className="newparkform">
+              <h3><u>Add a new park to explore!</u></h3>
         <form onSubmit={handleSubmit}>
             <label>Name:</label>
           <input onChange={updatedFormData} type="text" name= "name" placeholder="Add the parks name here!" value={formData.name} />
@@ -53,7 +53,8 @@ function NewParkForm(){
           <label>Activities:</label>
           <input onChange={updatedFormData} type="text" name= "activities" placeholder="Activities to explore!" value={formData.activities}/>
           <br/>
-          <button type="submit">Add Park</button>  
+          <br/>
+          <button className="newparkformbutton" type="submit">Add Park</button>  
         </form>
         </div>
     )
