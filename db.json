@@ -119,14 +119,6 @@
         "Stargazing"
       ],
       "description": "Experience the rugged beauty of Canyonlands National Park, where towering mesas, deep canyons, and stunning arches await. Whether you're hiking to panoramic viewpoints or stargazing under the desert sky, Canyonlands promises an adventure like no other!"
-    },
-    {
-      "id": "137c",
-      "name": "Arches National Park",
-      "image": "https://lh3.googleusercontent.com/p/AF1QipNqlBdlqS0MaKoOV4j4msLQYgajvlGj37MsLelf=s1360-w1360-h1020",
-      "location": "Utah",
-      "description": "Arches National Park is renowned for its stunning natural sandstone arches, spires, and rock formations, shaped by erosion over millions of years.",
-      "activities": "Hiking, Scenic Driving"
     }
   ]
 }

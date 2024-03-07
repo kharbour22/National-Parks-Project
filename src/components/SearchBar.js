@@ -4,13 +4,16 @@ function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
-    onSearch(e.target.value);
+    const term = e.target.value.toLowerCase();
+    setSearchTerm(term);
+    onSearch(term);
   };
 
   return (
     <div className="searchbar">
-        <h4><u>Search by Name</u>:</h4>
+      <h4>
+        <u>Search by Name</u>:
+      </h4>
       <input
         type="text"
         placeholder=""
