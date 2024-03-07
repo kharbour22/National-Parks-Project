@@ -9,8 +9,8 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:4000/parks")
-      .then((response) => response.json())
-      .then((parksData) => setParks(parksData));
+      .then(response => response.json())
+      .then(parksData => setParks(parksData));
   }, []);
 
   function addPark(newPark) {

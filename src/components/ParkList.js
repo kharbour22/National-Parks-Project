@@ -7,6 +7,11 @@ function ParkList() {
   const { parks } = useOutletContext();
   const [searchResults, setSearchResults] = useState([]);
 
+  
+  const parkComponents = parks.map(park => {
+    return<Park key={park.id} park={park}/>
+  })
+
   if (searchResults.length === 0 && parks.length > 0) {
     setSearchResults(parks);
   }
@@ -31,9 +36,8 @@ function ParkList() {
         <SearchBar onSearch={handleSearch} />
       </div>
       <ul className="park-list">
-        {searchResults.map((park) => (
-          <Park key={park.id} park={park} />
-        ))}
+     
+        {parkComponents}
       </ul>
     </>
   );
